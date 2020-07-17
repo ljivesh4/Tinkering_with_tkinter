@@ -1,7 +1,6 @@
 from tkinter import *
 from PIL import Image, ImageTk
-
-
+from playsound import playsound
 
 if __name__ == '__main__':
 
@@ -13,6 +12,9 @@ if __name__ == '__main__':
     bg_img = ImageTk.PhotoImage(Image.open("Images\MainMenu.jpg"))  #Making .jpg format compatible with tkinter
     bg_img_label = Label(menu_canvas, image = bg_img)               #Using background image as label
     bg_img_label.place(relheight = 1, relwidth = 1)                 #placeing background image
+
+
+    playsound('Sounds\MainMenu.mp3',False)
 
 
 
